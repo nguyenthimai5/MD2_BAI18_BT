@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class OptimizedPrieFactorization implements Runnable{
     @Override
     public void run() {
-        System.out.println("Tim so nguyen to bang phuong phap toi uu!");
-        if (isPrime(11)){
-            System.out.print("Đây la so nguyen to\n");
-        }else {
-            System.out.println("Đây không phải là số nguyên tố");
+        System.out.println("Tim so nguyen to tu 1-100 bang phuong phap toi uu!");
+        for (int i = 2; i < 100; i++) {
+            if (isPrime(i)){
+                System.out.printf("\t %d",i);
+            }
         }
+        System.out.print("\n");
+
 
     }
     public static boolean isPrime(int number){
